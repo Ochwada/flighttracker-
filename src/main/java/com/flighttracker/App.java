@@ -1,13 +1,20 @@
 package com.flighttracker;
-
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 /**
- * Hello world!
+ * Demo Class
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Flight flight = new Flight(
+                "XY123",
+                LocalDateTime.of(2025, 6, 9, 17, 0),
+                ZoneId.of("Europe/London")
+        );
+
+        flight.printFlightDetails();
     }
 }
