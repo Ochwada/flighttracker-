@@ -15,6 +15,15 @@ public class App
                 ZoneId.of("Europe/London")
         );
 
+        Flight flight1 = new Flight(
+                "XY001",
+                LocalDateTime.now().minusHours(1),
+                ZoneId.of("Europe/London")
+        );
+
+
+
         flight.printFlightDetails();
+        flight1.printFlightDetails();
     }
 }
